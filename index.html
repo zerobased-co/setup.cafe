@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Setup.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Nanum+Myeongjo:700&display=swap" rel="stylesheet">
+    <style>
+    body, html {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #222;
+    }
+    * {
+      font-family: 'Merriweather', 'Nanum Myeongjo', serif;
+    }
+    h1, h2 {
+      display: block;
+      color: #eee;
+      margin: 0;
+      padding: 1em 0;
+      text-shadow: 0 0 3px #111;
+    }
+    h1 {
+      font-size: 8em;
+      letter-spacing: 1px;
+    }
+    hr {
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid #333;
+      border-top: 1px solid #111;
+    }
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      width: 100%;
+      height: 100%;
+    }
+    .description {
+      padding: 1em 0;
+      text-align: center;
+    }
+    p, label {
+      color: #ddd;
+      font-family: sans-serif;
+      line-height: 1.4;
+    }
+    .byline {
+      margin-top: 2em;
+    }
+    .byline a {
+      color: #fff;
+      font-size: 0.875em;
+      text-decoration: none;
+    }
+    .newsletter {
+      text-align: center;
+    }
+    .newsletter a {
+      font-size: 0.875em;
+      color: #444;
+      text-decoration: none;
+    }
+    .newsletter p {
+      margin: 1em 0.25em 0em;
+    }
+    .newsletter .tinyletter {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Setup.</h1>
+      <hr>
+      <h2>선택의 이유를 묻고 기록하다.</h2>
+      <div class="description">
+        <p>어떤 환경에서, 누구와 함께, 왜 그렇게 선택했는지 궁금합니다.</p>
+        <p>결정 그 자체보다는 어떤 사고 과정을 거친 선택인지 알고 싶습니다.</p>
+        <p>선택의 결과는 시간이 지나면 빛바래지만, 그 이유는 더 오래 기억될 수 있습니다.</p>
+        <br>
+        <p>계절에 한 번 나오는 인터뷰 잡지, 셋업.</p>
+      </div>
+      <hr>
+      <div class="newsletter">
+        <p>셋업 뉴스레터에 이메일을 등록하시면 잡지가 출간될 때 알려드립니다.</p>
+        <form class="tinyletter" action="https://tinyletter.com/lqez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/lqez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <p><label for="tlemail">이메일</label></p>
+          <p><input type="text" style="width:140px" name="email" id="tlemail" /></p>
+          <input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" />
+        </form>
+        <p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p>
+      </div>
+      <div class="byline">
+        <a href="https://zerobased.co" target="_blank">by zerobased.co</a>
+      </div>
+    </div>
+  </body>
+</html>
